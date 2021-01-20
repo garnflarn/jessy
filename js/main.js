@@ -91,6 +91,13 @@ function reset(){
   localStorage.setItem("count", 0);
   o = document.getElementById("outputbox");
   o.innerHTML="";
+
+  o = document.getElementsByClassName("bigbutton");
+  for (var i = 0; i < o.length; i++) {
+    if(o[i].disabled == true)
+      o[i].disabled=false;
+  }
+
 }
 
 function button(b){
@@ -191,7 +198,7 @@ function getChallengeBegin(t, r) {
     "Adopt a brisk, efficient attitude and pour yourself a glass of wine.",
     "Idly toy with your bottle.  Perhaps touch its coolness to the smooth skin of your belly...",
     "Shot time for Jenny!  Pour yourself a shot and drink it <i>right away</i>.",
-    "You are loved."
+    "You are loved despite -- or because of? -- your love of food and drink."
 
   ];
 
@@ -226,11 +233,11 @@ function getChallengeMiddle(t){
     "Now give yourself a little spank -- that should encourage you to drink when you're told!",
     "Say out loud, 'I am fat and greedy and my belly is big.'  Because you <i>are</i> and it <i>is</i>.",
     "Naughty girl -- you drink, yes but you <i>could</i> drink <i>more</i>.  And you <i>will!</i>",
-    "Pinch your tum and remember that I want you staggering drunk.  No dignified bedtime for <i>this</i> fat little drinker.",
+    "Brat! Pinch your tum and remember that I want you staggering drunk.  No dignified bedtime for <i>this</i> fat little drinker.",
     "Put your pretty little hand near your pussy.  Lightly touch your thighs and lower belly.  But <i>don't</i> touch your pussy, you excessively naughty woman -- you should be <i>putting booze into your stomach!</i>",
     "Reflect seriously on how greedy you have been.  You have been very very greedy, and that's why you are so very fat.  And you're going to carry on being greedy, aren't you?",
     "Close your eyes (did that make you dizzy?  If not, you need to drink harder!).  Imagine a slap on the butt.  You probably deserve one, you <i>excessively sober</i> woman!",
-    "Pinch your thigh.  You naughty girl, to still be so ridiculously sober!"
+    "Pinch your thigh, because you can sometimes be kind of a brat.  It's just true."
   ];
 
   if(t==1)
