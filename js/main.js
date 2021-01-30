@@ -9,18 +9,18 @@ function getEncouragement(){
 
   strings=[
     "Treat yourself!",
-    "Treat time, Jenny!",
+    "Treat time, " + cfg_feedeename + "!",
     "Put something in your tummy!",
     "Have a little drinkie!",
     "You're beautiful and you deserve treats!",
-    "Fill that tum up, Jenny!",
+    "Fill that tum up, " + cfg_feedeename + "!",
     "Time to look after that belly!",
-    "Drink time for Jenny!",
+    "Drink time for " + cfg_feedeename + "!",
     "Down the hatch!",
-    "Bon voyage, Jenny!",
+    "Bon voyage, " + cfg_feedeename + "!",
     "You're smart and kind and deserve to be drunk!",
     "Hoping you're getting nice and drunk!",
-    "Jenny + booze = pink sticky sexy Jenny!",
+    "" + cfg_feedeename + " + booze = pink sticky sexy " + cfg_feedeename + "!",
     "Pickle that tum!"
   ];
 
@@ -35,9 +35,9 @@ function updateTime(){
 
   count = localStorage.getItem("count");
   if(!count || count == 0 ){
-    oc.innerHTML = "You've had no little drinks here yet, Jenny.  Although perhaps you are ALSO getting through a lot of wine -- I hope so!";
+    oc.innerHTML = "You've had no little drinks here yet, " + cfg_feedeename + ".  Although perhaps you are ALSO getting through a lot of wine -- I hope so!";
   }else {
-    oc.innerHTML = "You've had " + count + " little drinks, Jenny.";
+    oc.innerHTML = "You've had " + count + " little drinks, " + cfg_feedeename + ".";
   }
 
   t = new Date().getTime();
@@ -68,12 +68,12 @@ function updateTime(){
   }
 
   if(ts < 15){
-    o.innerHTML="It's been <b>" + ts + "</b> minutes... perhaps you should consider a new treat, Jenny?";
+    o.innerHTML="It's been <b>" + ts + "</b> minutes... perhaps you should consider a new treat, " + cfg_feedeename + "?";
     return;
   }
 
   if(ts < 20){
-    o.innerHTML="It's been <b>" + ts + "</b> minutes... definitely time to put MORE in your belly, Jenny!";
+    o.innerHTML="It's been <b>" + ts + "</b> minutes... definitely time to put MORE in your belly, " + cfg_feedeename + "!";
     return;
   }
 
@@ -152,9 +152,9 @@ function getMajorChallenge(){
   r = Math.floor(Math.random() * 14);
 
   strings=[
-    "Finish your glass right now, Jenny.  Pour another full glass of the same drink, and guzzle it down quickly.  That should help fill your belly!",
+    "Finish your glass right now, " + cfg_feedeename + ".  Pour another full glass of the same drink, and guzzle it down quickly.  That should help fill your belly!",
     "Pour two shots of spirits now.  Pour them both into your mouth, then glug them down!  Feel the warmth...!",
-    "Pour two shots, Jenny.  Then put your hand on your pussy and give it a stroke. Drink both shots while touching your pussy.  Greedy girl!",
+    "Pour two shots, " + cfg_feedeename + ".  Then put your hand on your pussy and give it a stroke. Drink both shots while touching your pussy.  Greedy girl!",
     "Pour yourself two drinks and pick up one in each hand.  You can't put them down till they are BOTH in your tummy!",
     "Exercise time!  Stand up and pour youself a really big glass, and drink it while still standing up.  Exercise is good!",
     "Drink a shot.  Now, go to the wall and lean against it belly first.  Feel how cool it is!  That was a lot of exercise, wasn't it?  Have another shot before you sit down!",
@@ -162,8 +162,8 @@ function getMajorChallenge(){
     "Wine and spirits are BOTH so delicious for a greedy girl!  Get yourself a glass of wine, pour a shot in it, and quaff it swiftly!",
     "Fat girls can't ONLY drink.  Eat a small quick snack... there, now you can go back to pickling yourself like a pro!  Have TWO drinks in rapid succession!",
     "You're very fat.  And girls who are very fat have a large capacity for alcohol.  Finish your current drink and pour yourself a HUGE glass, and drink it while touching your cute little pussy.",
-    "Tipple til you topple, that's the motto -- and you haven't yet toppled over.  Serious challenge time, then; three shots, spaced two minutes apart.  GO JENNY!",
-    "Jenny, you're too big and beautiful to fuss over glasses all the time.  Whatever bottle you last used, pick it up and take several big glugs.  Then wash it down by finishing a drink.  Good Jenny!",
+    "Tipple til you topple, that's the motto -- and you haven't yet toppled over.  Serious challenge time, then; three shots, spaced two minutes apart.  GO " + cfg_feedeename + "!",
+    "" + cfg_feedeename + ", you're too big and beautiful to fuss over glasses all the time.  Whatever bottle you last used, pick it up and take several big glugs.  Then wash it down by finishing a drink.  Good " + cfg_feedeename + "!",
     "I want you round and pick and sticky.  Have a drink.  Now, think about how round and pink you will be tomorrow IF you keep the DRINKING up!  Hangovers can be sexy too!  Now have ANOTHER drink!",
     "Exercise time!  Make two drinks and carry them over to the kitchen counter.  Yay, that was exercise!  But it's important to stay hydrated, so drink them BOTH before you sit back down!"
   ];
@@ -191,13 +191,13 @@ function getChallengeBegin(t, r) {
     "Finish your drink (if you had none left, pour a new one and finish <i>that</i>!",
     "Pour yourself a lovely refreshing shot of spirits.",
     "Close your eyes for a moment... how drunk do you feel?",
-    "Jenny needs wine!  Drink six large gulps of wine, refilling your glass if you have to.",
+    "" + cfg_feedeename + " needs wine!  Drink six large gulps of wine, refilling your glass if you have to.",
     "A change is as good as a rest.  Whatever you were drinking, pour yourself something else as well.",
     "Hold your belly in your hands and think of me.",
     "Hold your huge tits in your hands and think of me.",
     "Adopt a brisk, efficient attitude and pour yourself a glass of wine.",
     "Idly toy with your bottle.  Perhaps touch its coolness to the smooth skin of your belly...",
-    "Shot time for Jenny!  Pour yourself a shot and drink it <i>right away</i>.",
+    "Shot time for " + cfg_feedeename + "!  Pour yourself a shot and drink it <i>right away</i>.",
     "You are loved despite -- or because of? -- your love of food and drink."
 
   ];
